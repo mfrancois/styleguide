@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Default element styles</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+
+    <style>
+        body {
+            font: 1em sans-serif;
+        }
+        .section-header {
+            border-bottom: 1px solid #eee;
+            color: #555;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-weight: normal;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+<!--
+h1, h2, h3, h4, h5, h6
+p, a, a:hover, strong, em
+ul, ol
+address
+blockquote
+img, img gauche, img droite, img avec legende
+table
+form (label, input text, textarea, checkbox, radio, select, button, placeholder, états focus, états disabled, états erreur, messages d'erreur)
+-->
+
+<!-- Titres -->
+<h1>Titre de la page</h1>
+
+<h2 class="section-header">Sous-titres</h2>
+<h2>Titre niveau 2</h2>
+<h3>Titre niveau 3</h3>
+<h4>Titre niveau 4</h4>
+<h5>Titre niveau 5</h5>
+<h6>Titre niveau 6</h6>
+
+
+<!-- p, a, a:hover, strong, em -->
+<h2 class="section-header">Paragraphes</h2>
+<p>Un paragraphe de Lorem ipsum dolor sit amet, <a href="#">un lien consectetur adipiscing elit</a>. Aenean eros eros, <strong>un strong posuere non dolor sed</strong>, imperdiet pharetra risus. Phasellus vestibulum nisi sed cursus pulvinar. Sed feugiat sodales turpis. <em>Texte italique aliquam pretium vitae</em> dui at tempus. Vivamus sagittis, dolor ac eleifend tincidunt, sapien quam dignissim neque, sit amet suscipit leo ipsum a nibh. Proin euismod ut nisi a tempor. Etiam imperdiet nisl magna, ac bibendum nulla sagittis ut. Ut non nisi id risus dapibus viverra vehicula eu nulla. Maecenas suscipit sodales orci, nec dictum nunc sodales sagittis. Quisque rhoncus lectus et risus elementum feugiat. Cras felis arcu, bibendum at elementum ut, sagittis ut tellus. Phasellus non sollicitudin sem. Sed eleifend magna tempus felis mattis, et convallis quam eleifend. Mauris pharetra at mauris a hendrerit. Quisque convallis vestibulum justo, in mattis lacus fermentum non.</p>
+
+
+<!-- ul, ol -->
+<h2 class="section-header">Listes</h2>
+<ul>
+    <li>Une liste non ordonn&eacute;e</li>
+    <li>Bibendum nulla sagittis ut</li>
+    <li>Maecenas suscipit sodales orci</li>
+    <li>Quisque convallis vestibulum justo
+        <ul>
+            <li>Une liste non ordonn&eacute;e
+                <ul>
+                    <li>Une liste non ordonn&eacute;e</li>
+                    <li>Bibendum nulla sagittis ut</li>
+                    <li>Maecenas suscipit sodales orci</li>
+                </ul>
+            </li>
+            <li>Bibendum nulla sagittis ut</li>
+            <li>Maecenas suscipit sodales orci</li>
+        </ul>
+    </li>
+</ul>
+<ol>
+    <li>Une liste ordonn&eacute;e</li>
+    <li>Bibendum nulla sagittis ut</li>
+    <li>Maecenas suscipit sodales orci</li>
+    <li>Quisque convallis vestibulum justo
+        <ol>
+            <li>Bibendum nulla sagittis ut</li>
+            <li>Maecenas suscipit sodales orci</li>
+            <li>Quisque convallis vestibulum justo
+                <ol>
+                    <li>Maecenas suscipit sodales orci</li>
+                    <li>Quisque convallis vestibulum justo</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Une liste ordonn&eacute;e</li>
+    <li>Bibendum nulla sagittis ut</li></li>
+</ol>
+
+
+<!-- address -->
+<h2 class="section-header">Address</h2>
+<address>123 Example Street,
+    Testville,
+    West Madeupsburg,
+    CSSland,
+    1234</address>
+
+
+<!-- blockquote -->
+<h2 class="section-header">Citations</h2>
+<blockquote>
+    <p>Une citation dans un blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat sollicitudin auctor ligula cursus. Nunc at lacinia augue. Aliquam vel lectus tortor, eget scelerisque erat. Nunc ornare cursus rutrum. Proin enim libero, mattis vitae tristique ac, auctor sit amet lorem. Nullam tincidunt facilisis dolor non cursus. Nullam fringilla tempus velit. Integer leo urna, po</p>
+    <small>- Lipsum.com</small>
+</blockquote>
+
+
+<!-- img, img alignée gauche, img alignée droite, img avec legende -->
+<h2 class="section-header">Images</h2>
+<p>Center-aligned image with no caption, and text before and after.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat .</p>
+<img style="display: block; margin: 0 auto;" width="300" height="200" alt="300x200" src="http://placehold.it/300x200">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat sollicitudin auctor ligula cursus. Nunc at lacinia augue. Aliquam vel lectus tortor, eget scelerisque erat. Nunc ornare cursus rutrum. Proin enim libero, mattis vitae tristique ac, auctor sit amet lorem. Nullam tincidunt facilisis dolor non cursus. Nullam fringilla tempus velit. Integer leo urna, po</p>
+
+<p>Left-aligned image with no caption, and text before and after.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat .</p>
+<img style="float: left; width: 300px;" width="300" height="200" alt="300x200" src="http://placehold.it/300x200">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat sollicitudin auctor ligula cursus. Nunc at lacinia augue. Aliquam vel lectus tortor, eget scelerisque erat. Nunc ornare cursus rutrum. Proin enim libero, mattis vitae tristique ac, auctor sit amet lorem. Nullam tincidunt facilisis dolor non cursus. Nullam fringilla tempus velit. Integer leo urna, porttitor porta cursus vel, laoreet at nisi. Sed dictum accumsan metus ut porta. Suspendisse a lectus ac tortor varius suscipit non in mauris. Morbi ullamcorper, orci et volutpat aliquam, leo orci facil</p>
+
+<p>Right-aligned image with caption, and text before and after. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat .</p>
+<div style="float: right; width: 300px">
+    <img width="300" height="200" alt="300x200" src="http://placehold.it/300x200">
+    <p class="wp-caption-text">A picture is worth a thousand words</p>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis lectus sed nisl tempor lacinia. Nam nec augue nec lacus vehicula sagittis id eu elit. Praesent molestie nunc a quam consequat sollicitudin auctor ligula cursus. Nunc at lacinia augue. Aliquam vel lectus tortor, eget scelerisque erat. Nunc ornare cursus rutrum. Proin enim libero, mattis vitae tristique ac, auctor sit amet lorem. Nullam tincidunt facilisis dolor non cursus. Nullam fringilla tempus velit. Integer leo urna, porttitor porta cursus vel, laoreet at nisi. Sed dictum accumsan metus ut porta. Suspendisse a lectus ac tortor varius suscipit non in mauris. Morbi ullamcorper, orci et volutpat aliquam, leo orci facilisis tortor, eget viverra magna ante ac nunc. Nunc lacus sapien, hendrerit nec elementum ut, faucibus quis eros. Vivamus libero dui, euismod vel euismod vel, porta vitae ligula. Pellentesque et orci id odio luctus mollis. Nulla condimentum, felis et scelerisque eleifend, dui lectus convallis dolor</p>
+
+<!-- table -->
+<h2 class="section-header">Tableaux</h2>
+<table>
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Pellente</th>
+        <th>Horbi</th>
+        <th>Tristique</th>
+        <th>Aenean</th>
+        <th>Pellentesque</th>
+        <th>Habitant</th>
+        <th>Tristique</th>
+        <th>Egestas</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="8">(1) Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <th>Pellentesque</th>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+        <td>habitant</td>
+        <td>vestibulum vestibulum vestibulum</td>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+    </tr>
+    <tr>
+        <th>Volutpat</th>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+        <td>volutpat</td>
+        <td>vestibulum </td>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+    </tr>
+    <tr>
+        <th>volutpat</th>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+        <td>volutpat</td>
+        <td>vestibulum </td>
+        <td>19/02/03</td>
+        <td>EUR</td>
+        <td><em>4,750%</em></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- form (label, input text, textarea, checkbox, radio, select, button, placeholder, états focus, états disabled, états erreur, messages d'erreur, message de confirmation) -->
+<h2 class="section-header">Formulaires</h2>
+<p><small>(Pensez à styliser aussi les états focus, les états d'erreur, et les messages d'erreur.)</small></p>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Styles par défaut</legend>
+        <p>
+            <label>Un label</label>
+            <input type="text" placeholder="Un input text avec placeholder" />
+        </p>
+        <p>
+            <textarea>Un textarea</textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="check" value="Checkbox"> Un checkbox
+            <input type="checkbox" name="check" value="Checkbox"> Un checkbox
+            <input type="checkbox" name="check" value="Checkbox"> Un checkbox
+        </p>
+        <p>
+            <input type="radio" name="radio" value="radio1"> Un radio
+            <input type="radio" name="radio" value="radio2"> Un radio
+            <input type="radio" name="radio" value="radio2"> Un radio
+        </p>
+        <p>
+            <select>
+                <option>Un select</option>
+                <option>Lorem ipsum dolor</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Bouton submit" />
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Desactivé</legend>
+        <p>
+            <input type="text" placeholder="Un input text avec placeholder" disabled />
+        </p>
+        <p>
+            <textarea disabled>Un textarea</textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="check" value="Checkbox" disabled> Un checkbox
+            <input type="checkbox" name="check" value="Checkbox" disabled> Un checkbox
+            <input type="checkbox" name="check" value="Checkbox" disabled> Un checkbox
+        </p>
+        <p>
+            <input type="radio" name="radio" value="radio1" disabled> Un radio
+            <input type="radio" name="radio" value="radio2" disabled> Un radio
+            <input type="radio" name="radio" value="radio2" disabled> Un radio
+        </p>
+        <p>
+            <select disabled>
+                <option>Un select</option>
+                <option>Lorem ipsum dolor</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Bouton submit" disabled />
+        </p>
+    </fieldset>
+
+    <p>
+        <img src="http://www.huffingtonpost.fr/images/ajax-loader.gif" alt="Loading..." />
+        <em>Merci, votre message a &eacute;t&eacute; envoy&eacute;</em>
+    </p>
+</form>
+</body>
+</html>
